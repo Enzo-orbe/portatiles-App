@@ -45,11 +45,20 @@ export default function Login() {
 
   return (
     <Layout>
-      <>
+      <div
+        css={css`
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+        `}
+      >
         <h1
           css={css`
             text-align: center;
             margin-top: 5rem;
+            color: #fff;
           `}
         >
           Iniciar Sesion
@@ -87,7 +96,7 @@ export default function Login() {
 
           <InputSubmit type="submit" value="Iniciar Sesion" />
         </Formulario>
-      </>
+      </div>
     </Layout>
   );
 }

@@ -44,11 +44,20 @@ export default function CrearCuenta() {
 
   return (
     <Layout>
-      <>
+      <div
+        css={css`
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+        `}
+      >
         <h1
           css={css`
             text-align: center;
             margin-top: 5rem;
+            color: #ffff;
           `}
         >
           Crear Cuenta
@@ -97,7 +106,7 @@ export default function CrearCuenta() {
           {error && <Error> {error} </Error>}
           <InputSubmit type="submit" value="Crear Cuenta" />
         </Formulario>
-      </>
+      </div>
     </Layout>
   );
 }

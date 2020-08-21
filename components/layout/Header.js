@@ -7,8 +7,9 @@ import Navegacion from "./Navegacion";
 import { FirebaseContext } from "../../firebase";
 
 const ContenedorHeader = styled.div`
+  display: flex;
   max-width: 1200px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   @media (min-width: 768px) {
     display: flex;

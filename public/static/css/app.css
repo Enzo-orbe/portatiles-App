@@ -1,4 +1,6 @@
 .contenedor {
+  display: grid;
+  align-self: initial;
   max-width: 1200px;
   width: 30%;
   padding: 5rem 0;

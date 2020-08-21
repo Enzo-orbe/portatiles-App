@@ -1,16 +1,19 @@
 import React from "react";
+import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { es } from "date-fns/locale";
 import Link from "next/link";
 
 const Articulo = styled.article`
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   background-color: #fff;
   border: 1px solid #a19997;
   display: grid;
   justify-content: space-between;
   flex-direction: column;
+  border-radius: 5px;
+  box-shadow: -6px 7px 34px 0px rgba(36, 36, 36, 1);
 `;
 
 const DescripcionOrden = styled.div`
@@ -53,14 +56,24 @@ export default function DetallesOrden({ orden }) {
         </div>
         <div>
           <Link href="/ordenes/[id]" as={`/ordenes/${id}`}>
-            <Titulo>{nº_orden}</Titulo>
+            <Titulo>Nº de Orden: {nº_orden}</Titulo>
           </Link>
-          <TextoDescripcion>{descripcion}</TextoDescripcion>
+          <TextoDescripcion> Descripcion: {descripcion}</TextoDescripcion>
           <p>
             Ingresado hace:{" "}
             {formatDistanceToNow(new Date(creado), { locale: es })}
           </p>
-          <p>Estado: {estado}</p>
+          <p>
+            {" "}
+            <span
+              css={css`
+                font-weight: bold;
+              `}
+            >
+              Estado:
+            </span>{" "}
+            {estado}
+          </p>
           <p>
             Propietario: <span>{propietario}</span>
           </p>
