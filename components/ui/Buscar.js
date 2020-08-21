@@ -4,7 +4,7 @@ import { css } from "@emotion/core";
 import Router from "next/router";
 
 const InputText = styled.input`
-  border: 1px solid #a19997;
+  border: none;
   border-radius: 5px;
   padding: 1rem;
   min-width: 300px;
@@ -21,7 +21,7 @@ const InputSubmit = styled.button`
   right: 1rem;
   top: 1px;
   background-color: white;
-  border: none;
+  border: 1px solid #fff;
   text-indent: -9999px;
 
   &:hover {

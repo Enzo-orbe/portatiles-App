@@ -20,19 +20,13 @@ const ContenedorOrden = styled.div`
 
 const Container = styled.div`
   display: flex;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 2rem;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-`;
-
-const Propietario = styled.p`
-  padding: 0.5rem 2rem;
-  background-color: #da552f;
-  color: #ffff;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: inline-block;
-  text-align: center;
 `;
 
 export default function Orden() {
@@ -83,7 +77,7 @@ export default function Orden() {
 
     try {
       await firebase.db.collection("ordenes").doc(id).delete();
-      router.push("/");
+      router.push("/ordenes");
     } catch (error) {
       console.log(error);
     }
@@ -95,7 +89,7 @@ export default function Orden() {
         {error ? (
           <Error404 />
         ) : (
-          <div className="contenedor">
+          <div>
             <h1
               css={css`
                 text-align: start;
@@ -147,9 +141,32 @@ export default function Orden() {
                 </div>
               </aside>
             </ContenedorOrden>
-            {puedeBorrar() && (
-              <Boton onClick={eliminarOrden}> Eliminar Orden </Boton>
-            )}
+            <div
+              css={css`
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                border-radius: 5px;
+              `}
+            >
+              {puedeBorrar() && (
+                <button
+                  css={css`
+                    width: 100%;
+                    height: 50px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    background-color: red;
+                    border: none;
+                    margin-bottom: 5px;
+                  `}
+                  onClick={eliminarOrden}
+                >
+                  {" "}
+                  Eliminar Orden{" "}
+                </button>
+              )}
+            </div>
           </div>
         )}
       </Container>

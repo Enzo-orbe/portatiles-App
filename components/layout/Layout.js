@@ -21,18 +21,9 @@ const Layout = (props) => {
             font-size: 1.6rem;
             line-height: 1.5;
             font-family: "PT Sans", sans-serif;
-            background: #4b6cb7; /* fallback for old browsers */
-            background: -webkit-linear-gradient(
-              to right,
-              #182848,
-              #4b6cb7
-            ); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(
-              to right,
-              #182848,
-              #4b6cb7
-            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-color: #3b487b;
           }
+
           h1,
           h2,
           h3 {

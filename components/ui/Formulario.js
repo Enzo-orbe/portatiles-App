@@ -17,10 +17,13 @@ export const Campo = styled.div`
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
+  color: #ffff;
+  font-weight: bold;
 
   label {
     flex: 0 0 150px;
     font-size: 1.8rem;
+    color: #ffff;
   }
 
   input,

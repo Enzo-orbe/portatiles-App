@@ -13,9 +13,18 @@ export default function Home() {
           align-items: center;
           margin-top: 2rem;
           margin-bottom: 4rem;
+          color: #ffff;
         `}
       >
-        <h1>Bienvenidos</h1>
+        <h1
+          css={css`
+            font-size: 50px;
+            font-weight: bold;
+            color: #ffff;
+          `}
+        >
+          Bienvenidos
+        </h1>
       </div>
       <div
         css={css`

@@ -76,13 +76,22 @@ export default function nuevaOrden() {
             css={css`
               text-align: center;
               margin-top: 5rem;
+              color: #ffffff;
+              font-weight: bold;
             `}
           >
             Nueva Orden
           </h1>
           <Formulario onSubmit={handleSubmit} noValidate>
             <fieldset>
-              <legend>Informacion General</legend>
+              <legend
+                css={css`
+                  color: #ffff;
+                  font-weight: bold;
+                `}
+              >
+                Informacion General
+              </legend>
 
               <Campo>
                 <label htmlFor="nº_orden">Nº de Orden</label>
@@ -126,7 +135,12 @@ export default function nuevaOrden() {
               {errores.propietario && <Error>{errores.propietario}</Error>}
             </fieldset>
 
-            <fieldset>
+            <fieldset
+              css={css`
+                color: #ffff;
+                font-weight: bold;
+              `}
+            >
               <legend>Descripcion del Equipo</legend>
               <Campo>
                 <label htmlFor="descripcion">Descripcion</label>

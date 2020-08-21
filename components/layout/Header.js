@@ -23,6 +23,7 @@ const Logo = styled.a`
   font-weight: 700;
   font-family: "Roboto", serif;
   margin-right: 2rem;
+  cursor: pointer;
 `;
 
 export default function Header() {
