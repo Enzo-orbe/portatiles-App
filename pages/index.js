@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 import Buscar from "../components/ui/Buscar";
 import { css } from "@emotion/core";
+import Contacto from "../components/layout/Contacto";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       >
         <Buscar />
       </div>
+      <Contacto />
     </Layout>
   );
 }

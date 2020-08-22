@@ -14,6 +14,7 @@ const ContenedorHeader = styled.div`
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 `;
 
@@ -55,6 +56,9 @@ export default function Header() {
             css={css`
               display: flex;
               align-items: center;
+              @media (min-width: 768px) {
+                padding-bottom: 0;
+              }
             `}
           >
             <p
@@ -73,6 +77,9 @@ export default function Header() {
             css={css`
               display: flex;
               align-items: center;
+              @media (min-width: 768px) {
+                padding-bottom: 0;
+              }
             `}
           >
             <Link href="/login">

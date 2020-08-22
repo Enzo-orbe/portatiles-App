@@ -13,6 +13,12 @@ const Layout = (props) => {
         height: 100vh;
         display: flex;
         flex-direction: column;
+        @media (min-width: 768px) {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          width: 100%;
+        }
       `}
     >
       <Global
