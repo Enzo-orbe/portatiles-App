@@ -12,12 +12,23 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: 2rem;
-          margin-bottom: 4rem;
+          margin: 0 auto;
           color: #ffff;
+          flex-direction: column;
         `}
       >
         <h1
+          css={css`
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: #ffff;
+          `}
+        >
+          Portatiles Misiones
+        </h1>
+        <h2
           css={css`
             font-size: 50px;
             font-weight: bold;
@@ -25,7 +36,7 @@ export default function Home() {
           `}
         >
           Bienvenidos
-        </h1>
+        </h2>
       </div>
       <div
         css={css`

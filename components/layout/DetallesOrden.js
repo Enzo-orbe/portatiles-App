@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
+import format from "date-fns/format";
 import { es } from "date-fns/locale";
 import Link from "next/link";
 
@@ -60,8 +60,8 @@ export default function DetallesOrden({ orden }) {
           </Link>
           <TextoDescripcion> Descripcion: {descripcion}</TextoDescripcion>
           <p>
-            Ingresado hace:{" "}
-            {formatDistanceToNow(new Date(creado), { locale: es })}
+            Ingresado el:{" "}
+            {format(new Date(creado), "dd/MM/yyyy", { locale: es })}
           </p>
           <p>
             {" "}

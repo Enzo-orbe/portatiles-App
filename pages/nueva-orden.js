@@ -158,7 +158,7 @@ export default function nuevaOrden() {
 
             {error && <Error> {error} </Error>}
 
-            <InputSubmit type="submit" value="Crear Producto" />
+            <InputSubmit type="submit" value="Crear Orden" />
           </Formulario>
         </>
       )}

@@ -38,7 +38,7 @@ export const Campo = styled.div`
 `;
 
 export const InputSubmit = styled.input`
-  background-color: #a19997;
+  background-color: rgba(14, 14, 47, 100);
   width: 100%;
   padding: 1.5rem;
   text-align: center;

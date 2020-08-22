@@ -77,16 +77,15 @@ export default function Header() {
             css={css`
               display: flex;
               align-items: center;
+              margin-left: 10vh;
               @media (min-width: 768px) {
+                flex-direction: column;
                 padding-bottom: 0;
               }
             `}
           >
             <Link href="/login">
               <Boton bgColor="true">Login</Boton>
-            </Link>
-            <Link href="/crear-cuenta">
-              <Boton>Crear Cuenta</Boton>
             </Link>
           </div>
         )}
